@@ -2,10 +2,13 @@
     width: 100%;
     text-align: left;
     display: flex;
+    padding:10px;
     justify-content: space-around;
     background: radial-gradient(circle, #ffffff, #eeedfa, #dadcf5, #c5cbf1, #acbced, #a9b9ea, #a7b6e7, #a4b3e4, #b6bde2, #c5c7e0, #d2d2de, #dddddd);
 }
-
+.dark .Blogcontainer{
+    
+}
 .blog_1{
     width: 40%;
 }
