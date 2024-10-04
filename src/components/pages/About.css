@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+.AboutContainer{
+    background: radial-gradient(circle, #ffffff, #eeedfa, #dadcf5, #c5cbf1, #acbced, #a9b9ea, #a7b6e7, #a4b3e4, #b6bde2, #c5c7e0, #d2d2de, #dddddd);
+    padding: 20px;
+}
+.dark .AboutContainer{
+  background: linear-gradient(43deg, #161618 0%, #504b50 50%, #0f0f0e 100%);
+}
+.abouttitle, .horizontal-timeline-heading{
+  text-align: center;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-family:'Kelly Slab';
+  font-style: oblique;
+}
+.aboutname{
+  font-size: 28px;
+  font-family: 'Roboto Condensed';
+}
+u{
+  color: white;
+  background-color: #0f0f0e;
+}
+.dark u{
+  color:black;
+  background: white;
+}
+.highlight{
+  background-color: red;
+  color: white;
+}
+b{
+  color: rgb(211, 3, 3);
+  font-size: 38px;
+  font-family: 'Kelly Slab';
+  margin-left: 10px;
+}
+.dark b{
+  color: #1E90FF;
+}
+.aboutdescription{
+  font-family: 'Roboto Condensed';
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+.horizontal-timeline {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    position: relative;
+  }
+  .timeline-item {
+    text-align: center;
+    background: #ffffff1f;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    position: relative;
+    border-radius: 5px;
+    font-family: 'Roboto Condensed';
+  }
+  .heading{
+    font-size: 24px;
+  }
+  .degree{
+    font-size: 20px;
+  }
+  .college{
+    font-size: 18px;
+  }
+  .dark .horizontal-timeline-heading{
+    border-top: 2px solid white;
+  }
+  .horizontal-timeline-heading{
+    border-top: 2px solid  #15006A;
+    padding-top: 30px;
+  }
+  .timeline-item:first-child::before {
+    content: none;
+  }
+  @media screen and (max-width:756px) {
+    .horizontal-timeline{
+      flex-direction: column;
+    }
+  }
+  

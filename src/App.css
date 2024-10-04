@@ -1,0 +1,12 @@
+*{
+    box-sizing: border-box;
+}
+.App{
+    width: 100%;
+    height: 100%;
+    color: #15006A;
+}
+.App.dark{
+    background: linear-gradient(43deg, #161618 0%, #504b50 50%, #0f0f0e 100%);
+    color: white;
+}

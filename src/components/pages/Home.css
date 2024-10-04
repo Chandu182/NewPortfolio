@@ -1,0 +1,34 @@
+.HomeContainer{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    height: 100vh;
+    background-image: radial-gradient(circle, #ffffff, #eeedfa, #dadcf5, #c5cbf1, #acbced, #a9b9ea, #a7b6e7, #a4b3e4, #b6bde2, #c5c7e0, #d2d2de, #dddddd);
+    padding: 0 20px;
+    font-family: 'Roboto Condensed';
+}
+.dark .HomeContainer{
+    background: linear-gradient(43deg, #161618 0%, #504b50 50%, #0f0f0e 100%);
+}
+.homeHeading{
+    font-size: 3rem;
+    font-weight:bold;
+    text-align: center;
+    font-family: 'Kelly Slab';
+    color: #333;
+    margin-bottom: 1rem;
+}
+.dark .homeHeading,.dark .homeIntro{
+    color: white;
+}
+.homeIntro{
+    font-size: 1.3rem;
+    color: #555;
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+.dark .knowMore{
+    background: red;
+    color: white;
+}

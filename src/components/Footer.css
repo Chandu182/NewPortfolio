@@ -1,0 +1,58 @@
+.footer {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    padding: 20px; /* Spacing */
+    text-align: center; /* Center text */
+  }
+  
+  .footerContent {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+  
+  .footerNav, .miniFooterNav {
+    margin-bottom: 10px; /* Space between main nav and mini nav */
+  }
+  
+  .footerNav ul, .miniFooterNav ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+  }
+  
+  .footerNav li, .miniFooterNav li {
+    display: inline; /* Horizontal list items */
+    margin: 0 15px; /* Spacing between items */
+  }
+  
+  .footerNav a, .miniFooterNav a {
+    color: #fff; /* White links */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .footerNav a:hover, .miniFooterNav a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  /* Additional styles for the mini navbar */
+  .miniFooterNav {
+    background-color: #444; /* Slightly lighter background for mini navbar */
+    padding: 10px 0; /* Add some padding */
+  }
+  
+  .miniFooterNav li {
+    margin: 0 10px; /* Space between mini nav items */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footerNav li, .miniFooterNav li {
+      display: block; /* Stack items vertically on smaller screens */
+      margin: 5px 0; /* Vertical spacing */
+    }
+  
+    .footerNav, .miniFooterNav {
+      margin-bottom: 20px; /* More space for stacked nav */
+    }
+  }
+  
