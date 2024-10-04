@@ -19,7 +19,14 @@
   gap: 20px;
   transition: all 0.3s ease;
 }
-
+.skill-detail-logo{
+  mix-blend-mode: multiply;
+  filter: contrast(3);
+}
+.dark .skill-detail-logo{
+  mix-blend-mode: screen;
+  filter: contrast(3);
+}
 .skill-item {
   text-align: center;
   padding: 15px;

@@ -1,4 +1,5 @@
 import { useState,useEffect } from 'react';
+import './Blogs.css'
 const Blog = () => {
   const [username, setUsername] = useState('');
   const [message, setMessage] = useState('');
@@ -45,39 +46,42 @@ const Blog = () => {
   };
 
   return (
-    <div style={{ textAlign: 'center', marginTop: '50px' }}>
-      <h2>Leave a Message</h2>
-
+    <div className='Blogcontainer'>
+      <div className="blog_1">
+      <h2 className='leave'>Leave a Blog Message</h2>
       <form onSubmit={handleSubmit}>
-        <div>
-          <label>Username:</label>
+        <div className='Username'>
           <input
             type="text"
             value={username}
+            className='Uname'
             onChange={(e) => setUsername(e.target.value)}
+            placeholder='Enter Your Name'
             required
           />
         </div>
-        <div>
-          <label>Message:</label>
+        <div className='blogarea'>
           <textarea
             value={message}
+            className='blogtextarea'
             onChange={(e) => setMessage(e.target.value)}
+            placeholder='Write A Blog Message'
             required
           />
         </div>
-        <button type="submit">Submit</button>
+        <button className='Submit' type="submit">Submit</button>
       </form>
-
-      <h3>Messages</h3>
+      </div>
+      <div className="blog-2">
+      <h3 id='Commenttitle'>Comments</h3>
       {users.length > 0 ? (
         users.map((user, index) => (
-          <div key={index} style={{ border: '1px solid #ccc', padding: '10px', margin: '10px' }}>
-            <p>
-              <strong>Username:</strong> {user.username}
+          <div key={index} className='blog_2_content'>
+            <p className='username'>
+               {user.username}
             </p>
-            <p>
-              <strong>Message:</strong> {user.message}
+            <p className='usermessage'>
+               {user.message}
             </p>
             <button onClick={() => handleEdit(index)}>Edit</button>
             <button onClick={() => handleDelete(index)}>Delete</button>
@@ -86,6 +90,7 @@ const Blog = () => {
       ) : (
         <p>No messages yet.</p>
       )}
+      </div>
     </div>
   );
 }

@@ -1,0 +1,45 @@
+.Blogcontainer{
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+}
+.blog_1{
+    width: 40%;
+}
+.blog_2{
+    width: 60%;
+}
+
+.leave,#Commenttitle{
+    font-size: 30px;
+    text-align: center;
+}
+.Uname,.blogtextarea{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.192);
+    outline: none;
+    background: rgba(255, 255, 255, 0.164);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.Submit{
+    margin-bottom: 20px;
+    background: red;
+}
+.blog_2_content{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.username,.usermessage{
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+@media screen and (max-width:756px) {
+    .Blogcontainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

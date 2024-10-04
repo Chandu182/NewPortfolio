@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 .active{
     background-color: #000000;
-    color: white;
+    color: white!important;
 }
 .navbar{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     background-image: radial-gradient(circle, #ffffff, #eeedfa, #dadcf5, #c5cbf1, #acbced, #a9b9ea, #a7b6e7, #a4b3e4, #b6bde2, #c5c7e0, #d2d2de, #dddddd);
     position: sticky;
     font-family: 'Kelly Slab';
     top: 0;
     z-index: 1;
 }
-.dark nav{
+.dark .navbar{
     background: linear-gradient(43deg, #161618 0%, #504b50 50%, #0f0f0e 100%);
 }
 .titleandtoggler{
@@ -22,23 +22,23 @@
     justify-content: space-between;
     gap: 20px;
 }
-nav .title{
+.navbar .title{
     font-size: 1.5rem;
     margin: 1rem;
     font-weight: bold;
     text-decoration: none;
     color: #15006A;
 }
-.dark nav .title{
+.dark .navbar .title{
     color: white;
 }
-nav ul{
+.navbar ul{
     display: flex;
 }
-nav ul li{
+.navbar ul li{
     list-style: none;
 }
-nav ul li a{
+.navbar ul li a{
     display: block;
     text-decoration: none;
     font-size: 1.2rem;
@@ -50,11 +50,11 @@ nav ul li a{
 .dark nav ul li a{
     color: rgb(255, 255, 255);
 }
-nav ul li a:not(.active):hover{
+.navbar ul li a:not(.active):hover{
     background-color: #001c77;
     color: white;
 }
- nav .hamburger{
+ .navbar .hamburger{
     display: none;
     position: absolute;
     top: .75rem;
@@ -86,42 +86,42 @@ nav ul li a:not(.active):hover{
     background-color: rgb(255, 255, 255);
 }
 @media screen and (max-width:768px){
-    nav .hamburger{
+    .navbar .hamburger{
         display: flex;
     }
-    nav{
+    .navbar{
         flex-direction: column;
         align-items: start;
         width: 100%;
     }
-    nav ul{
+.navbar ul{
         display: none;
         flex-direction: column;
         width: 90%;
         margin-bottom: .25rem;
     }
-    nav ul.open{
+    .navbar ul.open{
         display: flex;
     }
-    nav ul li{
+    .navbar ul li{
         width: 100%;
         text-align: center;
     }
-    nav ul li a{
+    .navbar ul li a{
         margin: 0.2rem .5rem;
     }
-    nav .hamburger.close span{
+    .navbar .hamburger.close span{
         background-color: red;
     }
-    nav .hamburger.close span:nth-child(1) {
+    .navbar .hamburger.close span:nth-child(1) {
         transform: rotate(45deg) translate(0.75rem, 0.75rem);
       }
     
-      nav .hamburger.close span:nth-child(2) {
+      .navbar .hamburger.close span:nth-child(2) {
         opacity: 0; /* Hide the middle bar */
       }
     
-      nav .hamburger.close span:nth-child(3) {
+      .navbar .hamburger.close span:nth-child(3) {
         transform: rotate(-45deg) translate(0.35rem, -0.45rem);
       }
 }

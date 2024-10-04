@@ -8,7 +8,7 @@ const articlesData = [
     id: 1,
     title: "Power Platform in IT Marketing",
     author: "Sreekar",
-    date: "October 4, 2024",
+    date: "2007-present",
     content: (
       <>
         <p>
@@ -80,7 +80,7 @@ const articlesData = [
     id: 2,
     title: "Microsoft Office",
     author: "Sreekar",
-    date: "October 4, 2024",
+    date: "2007-Present",
     content: (
       <>
         <p >
@@ -263,7 +263,7 @@ choice for businesses and individuals alike.
  {
     id: 3,
     title: "ASP.NET with C#: Overview",
-    author: "Unknown",
+    author: "Sreekar",
     date: "July 13, 2024",
     content: (
       <>
@@ -374,8 +374,8 @@ choice for businesses and individuals alike.
   },  
   {
     id: 4,
-    title: "IT Software Services & Hardware with Operating System Installation and Online Problem Solutions",
-    author: "Unknown",
+    title: "Software Services & Hardware Installation ",
+    author: "Sreekar",
     date: "October 19, 2024",
     content: (
       <>
@@ -578,18 +578,18 @@ const Article = () => {
           <form onSubmit={handleCommentSubmit}>
             <input
               type="email"
-              style={{ width: '100%', padding: '10px', marginBottom: '10px' }}
+             className='usernameID'
               value={userId}
               onChange={(e) => setUserId(e.target.value)}
               placeholder="Enter your email ID"
               required
             />
             <textarea
-              style={{ width: '100%', padding: '10px', marginBottom: '10px' }}
               rows="4"
               value={newComment}
               onChange={(e) => setNewComment(e.target.value)}
               placeholder="Write your comment here..."
+              className='Comment'
               required
             />
             <button type="submit">Submit Comment</button>

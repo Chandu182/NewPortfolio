@@ -5,6 +5,7 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import { About, Article, Blog, Experience, Home, SkillSet } from './components/pages';
 import Footer from './components/Footer';
 
+
 function App() {
   const [theme, setTheme] = useState('light');
   const location = useLocation();
@@ -17,9 +18,9 @@ function App() {
       {showNavbar && <Navbar theme={theme} setTheme={setTheme} />}
       <Routes>
         <Route path="/" element={<Home theme={theme} />} />
-        <Route path="/About" element={<About theme={theme} />} />
-        <Route path="/Article" element={<Article theme={theme} />} />
-        <Route path="/Blog" element={<Blog theme={theme} />} />
+        <Route path="/About" element={<About/>} />
+        <Route path="/Article" element={<Article/>} />
+        <Route path="/Blog" element={<Blog />} />
         <Route path="/Experience" element={<Experience theme={theme} setTheme={setTheme} />} />
         <Route path="/SkillSet" element={<SkillSet theme={theme} setTheme={setTheme} />} />
       </Routes>

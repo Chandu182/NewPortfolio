@@ -8,6 +8,8 @@ import MSOfficeLight from './Assets/MSOfficeLight.png'
 import MSOfficeDark from './Assets/MSOfficeDark.jpg'
 import AdobeDark from './Assets/AdobeDark.png'
 import AdobeLight from './Assets/AdobetoolsLight.jpg'
+import InstallationLight from './Assets/installationlight.png'
+import InstallationDark from './Assets/installationdark.png'
 
 
 function SkillSet({ theme, setTheme }) {
@@ -36,14 +38,20 @@ function SkillSet({ theme, setTheme }) {
     {
       id: 3,
       name: "MS OFFICE",
-      description: ["Adobe Photoshop", "Adobe Premiere Pro","Adobe Dream viewer","Adobe After Effects [basics]"],
+      description: ['MS Access','MS Outlook'],
       logo: theme == 'light' ? MSOfficeLight : MSOfficeDark, // Replace with actual image path
     },
     {
       id: 4,
       name: "ADOBE TOOLS",
-      description: ["Built single-page applications using React.", "Used hooks and managed state efficiently."],
+      description: ["Adobe Photoshop", "Adobe Premiere Pro","Adobe Dream viewer","Adobe After Effects [basics]"],
       logo: theme == 'light' ? AdobeDark : AdobeLight, // Replace with actual image path
+    },
+    {
+      id: 5,
+      name: "IT Software Services & Hardware",
+      description: ["Microsoft operating system installations all types"," All Types of Linux tools family operating systems","Red heart Linux", "Kali Linux","Ubuntu","Cent OS"],
+      logo: theme == 'light' ? InstallationLight : InstallationDark, // Replace with actual image path
     },
   ];
 
@@ -59,7 +67,7 @@ function SkillSet({ theme, setTheme }) {
     <div className={`skills-container ${theme}`}>
       {/* Skill Details when clicked */}
       <h1 className="title">
-        SkillSet
+        SKILLSET AND IT INSTALLATION
       </h1>
       {activeSkill && (
         <div className="skill-details">
