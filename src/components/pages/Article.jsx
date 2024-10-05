@@ -8,7 +8,7 @@ const articlesData = [
     id: 1,
     title: "Power Platform in IT Marketing",
     author: "Sreekar",
-    date: "2007-present",
+    date: "2021-present",
     content: (
       <>
         <p>
@@ -264,7 +264,7 @@ choice for businesses and individuals alike.
     id: 3,
     title: "ASP.NET with C#: Overview",
     author: "Sreekar",
-    date: "July 13, 2024",
+    date: "2012-2016",
     content: (
       <>
         <p>
@@ -376,7 +376,7 @@ choice for businesses and individuals alike.
     id: 4,
     title: "Software Services & Hardware Installation ",
     author: "Sreekar",
-    date: "October 19, 2024",
+    date: "2007-present",
     content: (
       <>
         <h4>IT Software Services</h4>
